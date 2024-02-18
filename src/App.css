@@ -1,43 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
-}
-
 .planet-list {
   display: flex;
   justify-content: center;
   gap: 20px; 
   margin-top: 20px;
 }
-
-
 
 .planet-image {
   width: 150px; 
@@ -47,11 +13,6 @@
 .planet {
   text-align: center;
   position: relative;
-}
-
-.planet-image {
-  width: 150px;
-  height: 150px;
 }
 
 .planet-detail {
@@ -68,26 +29,4 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
   transition: opacity 0.5s, transform 0.5s;
-}
-
-.planet-detail.hidden {
-  opacity: 0;
-  transform: translateY(-20px);
-  pointer-events: none;
-  height: 0;
-  overflow: hidden;
-}
-
-.detail-content {
-  text-align: center;
-
-
-.planet.selected .planet-detail {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.planet-detail h1,
-.planet-detail p {
-  margin: 0;
 }
